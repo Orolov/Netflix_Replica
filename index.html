@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/scrollbar.css">
 </head>
 
 <body>
@@ -29,12 +30,18 @@
             <i class="material-icons myicon">notifications</i>
             <div class="avatar"></div>
         </div>
-
     </div>
 
     <!--Header: Video w/t title-->
     <div class="header">
-
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="src/BackgroundVidTrim.mp4" type="video/mp4" />
+            </video>
+            <div class="caption">
+                <img class="caption-text" src="src/BackgroundVidTitle" alt="Title">
+            </div>
+        </div>
     </div>
 
     <!--Body: List of movies-->
