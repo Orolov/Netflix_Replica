@@ -1,0 +1,81 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.637); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #141414;
+    margin: 4% auto; /* 15% from the top and centered */
+    width: 95%;
+    height: 98%;
+     /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 48px;
+    margin-right: 15px;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    background-image:
+    linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(0,212,255,0) 50%),
+    url('MovieBasePic.jpg');
+    height: 60%;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+  
+}
+.modal-header-title{
+    position:relative;
+    left: 5%;
+    top:  70%;
+}
+
+.modal-header-title > p{
+    font-size: 4em;
+}
+
+.modal-header-title > p > span{
+    font-size: 1.7em;
+}
+
+
+.modal-play-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 35px;
+  background-color: rgb(255, 255, 255);
+  width: 180px;
+  border-radius: 5px;
+  color: black
+}
+
+.modal-play{
+  font-size: 3em;
+  margin-right: 15px;
+}

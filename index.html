@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="src/scrollbar.css">
+    <link rel="stylesheet" href="src/modal.css">
 </head>
 
 <body>
@@ -56,7 +57,7 @@
             <h1 class="category-title">Trending Now</h1>
             <div id="2" class="category-list">
                 <!--Images go here-->
-                <img class="moviepic" src="src/MoviePic.jpg" type="image/jpg">
+                <img id="myBtn" class="moviepic" src="src/MoviePic.jpg" type="image/jpg">
             </div>
 
         </div>
@@ -125,8 +126,74 @@
 
     <!--Footer: List of contacts and whatnot-->
     <div class="contacts">
+        <div class="contacticon">
+            <img class="imageicons" src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+            <img class="imageicons" src="https://img.icons8.com/color/48/000000/facebook-new.png" />
+            <img class="imageicons" src="https://img.icons8.com/color/24/000000/twitter--v1.png" />
+            <img class="imageicons" src="https://img.icons8.com/color/48/000000/youtube-play.png" />
+        </div>
+        <div class="contactinfo">
+            <div class="info">
+                <p>Audio and Subtitles</p>
+                <p>Media Center</p>
+                <p>Media Center</p>
+                <p>Privacy Contact Us</p>
+            </div>
+            <div class="info">
+                <p>Audio Description</p>
+                <p>Investor Relations</p>
+                <p>Legal Notices</p>
+            </div>
+            <div class="info">
+                <p>Help Center</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+            </div>
+            <div class="info">
+                <p>Gift Cards</p>
+                <p>Terms of Use</p>
+                <p>Corporate Information</p>
+            </div>
+        </div>
+
+        <div class="serverinfo">
+            <div>
+                <p class="servicebox">Service Code</p>
+            </div>
+            <div>
+                <p>© 1997-2021 Netflix, Inc. {5aef9a35-a14e-4d79-a79a-4a99f250ed67</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <div class="modal-header-title">
+                    <p>
+                        The Abyss Of <br>
+                        <span>Racism</span>
+                    </p>
+
+                    <div class="modal-play-div">
+                        <i class="material-icons modal-play">play_arrow</i>
+                        <h1>Play</h1>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
 
     </div>
+
+
     <script src="index.js">
 
     </script>
