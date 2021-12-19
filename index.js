@@ -118,7 +118,10 @@ while (i < urls.length) {
         img.setAttribute("type", "image/jpg")
     }
 
+    console.log(i + 1)
+
     elemn1.appendChild(img)
+
     i = i + 1
 }
 
