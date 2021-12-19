@@ -8,6 +8,7 @@ body{
     background: #141414;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -68,33 +69,34 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header {
-
-}
 .movielist {
 
 }
+.header{
+    width: 100%;
+    height: 100%;
+}
 .category {
     color: white;
+    max-width: 100%;
+    padding: 25px
 }
-.contacts {
 
+.category-title {
+    margin-bottom: 8px;
+}
+.category-list{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.category-image{
+    margin-bottom: 5px;
+    height: auto;
+    width: 70%;
+    margin-right: 10px;
+}
+.moviepic {
+    margin-bottom: 5px;
+    margin-right: 10px;
 }

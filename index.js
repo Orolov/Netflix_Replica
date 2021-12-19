@@ -6,8 +6,10 @@ let elemn5 = document.getElementById("5")
 let elemn6 = document.getElementById("6")
 let elemn7 = document.getElementById("7")
 let elemn8 = document.getElementById("8")
-
-let i = 0
+let elemn9 = document.getElementById("9")
+let elemn10 = document.getElementById("10")
+let elemn11 = document.getElementById("11")
+let elemn12 = document.getElementById("12")
 
 let urls = [
     "https://occ-0-2119-2120.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABasnTUbdfuEcWsKVPjzF2_IhN_SxknGMnuKOEnpHT_UY4okztZ7OgW3wkv0mZIkCvVFH6pSOLMFG0kIFNcOea3ewWgc.webp",
@@ -107,6 +109,10 @@ let urls = [
     "https://occ-0-2119-2120.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSZD0yxtchWVO29xyfKEZ5sD0cw5XT5y2eUKqZ_LCn3I2fOGwXoReyw-GyHQsHlI5RVc_GLn3-YtyMbfb0yiFnKmDUaX5KqB7Z_95skH-T6jKkG_1-MP7pMfKabZ.jpg",
     "https://occ-0-2119-2120.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYMnZkE5W64jUe3hVJI1BrLZuL0zRTxXq-ODmtWSwwh52Bcxz3k2kbwWUCnfkoK_bayV9gfLlpxlJ2OtpqM4xME0XeODCfFLtOdUVYzX6mBac-POZRw2PsU3mU-d.jpg"]
 
+
+
+let i = 0
+
 while (i < urls.length) {
     let img = document.createElement("img")
     let extension = urls[i].split('.').pop();
@@ -118,9 +124,35 @@ while (i < urls.length) {
         img.setAttribute("type", "image/jpg")
     }
 
-    console.log(i + 1)
+    img.setAttribute("class", "category-image")
 
-    elemn1.appendChild(img)
+    if (i < 8) {
+        elemn1.appendChild(img)
+    } else if (i < 16) {
+        elemn2.appendChild(img)
+    } else if (i < 24) {
+        elemn3.appendChild(img)
+    } else if (i < 32) {
+        elemn4.appendChild(img)
+    } else if (i < 40) {
+        elemn5.appendChild(img)
+    } else if (i < 48) {
+        elemn6.appendChild(img)
+    } else if (i < 56) {
+        elemn7.appendChild(img)
+    } else if (i < 64) {
+        elemn8.appendChild(img)
+    } else if (i < 72) {
+        elemn9.appendChild(img)
+    } else if (i < 80) {
+        elemn10.appendChild(img)
+    } else if (i < 88) {
+        elemn11.appendChild(img)
+    } else if (i < 96) {
+        elemn12.appendChild(img)
+    } else {
+        console.log()
+    }
 
     i = i + 1
 }
