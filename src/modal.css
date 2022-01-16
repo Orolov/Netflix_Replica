@@ -9,73 +9,156 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.637); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.842); /* Black w/ opacity */
+    
   }
   
   /* Modal Content/Box */
   .modal-content {
     background-color: #141414;
-    margin: 4% auto; /* 15% from the top and centered */
+    margin: 50px auto; /* 15% from the top and centered */
     width: 95%;
-    height: 98%;
+    max-width: 1540px;
+    
      /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
   .close {
-    color: rgb(0, 0, 0);
+    color: rgb(100, 23, 23);
     float: right;
     font-size: 48px;
     margin-right: 15px;
     margin-top: 0px;
     font-weight: bold;
+    
   }
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
   }
 
-  .modal-header {
-    background-image:
-    linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(0,212,255,0) 50%),
-    url('MovieBasePic.jpg');
-    height: 60%;
-    background-size: cover;
-    color: white;
-    border-radius: 10px;
-  
-}
-.modal-header-title{
-    position:relative;
-    left: 5%;
-    top:  70%;
-}
-
-.modal-header-title > p{
-    font-size: 4em;
-}
-
-.modal-header-title > p > span{
-    font-size: 1.7em;
-}
-
-
-.modal-play-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  margin-top: 35px;
-  background-color: rgb(255, 255, 255);
-  width: 180px;
-  border-radius: 5px;
-  color: black
-}
 
 .modal-play{
   font-size: 3em;
-  margin-right: 15px;
+  margin-right: 10px;
+}
+
+/**Modal Header**/
+.modal-hero{
+  width: 100%;
+  height: 500px;
+  background:linear-gradient(0deg, rgba(20,20,20,1), rgba(0,0,0,0)), url("./MovieBasePic.jpg");
+  background-size:cover;
+  position: relative;
+}
+
+.modal-hero-corner{
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  
+}
+
+.modal-hero-corner > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+}
+
+.modal-buttons-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.modal-hero-play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 140px;
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+ 
+}
+.modal-netflix-logo{
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+/** Modal body **/
+
+.body-modal-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.modal-icon-holder{
+  font-size: 25px;
+  height: 30px;
+  text-align: center;
+}
+
+.modal-icon-border{
+  border-radius: 100%;
+  padding: 10px;
+  border: 2px solid rgb(240, 240, 240); 
+  fill: white;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-body{
+  font-size: 18px;
+  padding: 25px;
+}
+.match-percentage{
+  margin-top: 40px;
+  color: rgb(68, 204, 104);
+}
+
+.modal-rating{
+  color: red;
+  fill: red;
+}
+.modal-rating1{
+  color: rgb(240, 240, 240);
+  fill: rgb(240, 240, 240);
+}
+
+.modal-description{
+  line-height: 1.6em;
+  font-size: 1.2em;
+  color: white;
+  margin: 10px 0px;
+  margin-right: 50px;
+}
+
+.modal-categories{
+  line-height: 1.2em;
+  color:white;
+  font-size: medium;
+  margin: 10px 0px;
+  word-break: break-all;
+}
+
+.cast{
+  color: gray;
+  margin-right: 2px;
 }

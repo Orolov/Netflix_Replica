@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="src/scrollbar.css">
     <link rel="stylesheet" href="src/modal.css">
+    <link rel="stylesheet" href="src/modal2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -173,26 +175,265 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
+
+            <!-- Modal Head -->
             <div class="modal-header">
-                <div class="modal-header-title">
-                    <p>
-                        The Abyss Of <br>
-                        <span>Racism</span>
-                    </p>
 
-                    <div class="modal-play-div">
-                        <i class="material-icons modal-play">play_arrow</i>
-                        <h1>Play</h1>
+                <div class="modal-hero">
+                    <span class="close">&times;</span>
+                    <img src="./src/favicon.png" class="modal-netflix-logo" alt="NF"
+                        style="width: 60px; height: 60px;" />
+                    <div class="modal-hero-corner">
+                        <h1>
+                            The Abyss Of <br>
+                            <span>Racism</span>
+                        </h1>
+                        <div class="modal-buttons-container">
+                            <div class="modal-hero-play"
+                                onclick="document.getElementById('id01').style.display='block'">
+                                <i class="material-icons modal-play">play_arrow</i>
+                                <h1>Play</h1>
+                            </div>
+                            <div class="modal-icon-holder">
+                                <i class="fa fa-thumbs-up fa-10x modal-icon-border" aria-hidden="true"></i>
+                                <i class="fa fa-thumbs-down fa-10x modal-icon-border" aria-hidden="true"></i>
+                                <i class="fa fa-check fa-10x modal-icon-border" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
+
             </div>
 
+
+            <!-- Modal Body-->
+            <div class="modal-body">
+
+                <div class="body-modal-info">
+                    <div style="flex: 2">
+                        <i class="fa fa-star fa-10x modal-rating" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-10x modal-rating" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-10x modal-rating" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-10x modal-rating" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-10x modal-rating1" aria-hidden="true"></i>
+                        <p class="modal-description"> <span class="match-percentage">95% Match</span> 2021 Limited
+                            Series</p>
+
+                        <p class="modal-description">
+                            When a man tries to protest against impressment since he believed
+                            it to be regarding the issue of him being Japanese, he gets arrested and seen as an enemy of
+                            the
+                            state.
+
+                        </p>
+                    </div>
+
+
+
+                    <div style="flex: 1">
+                        <p class="modal-categories">
+                            <span class="cast">Cast:</span> Fred Toyosaburo Korematsu, Wayne M. Collins, Charles A.
+                            Horsky, Charles Fahy, Justice Hugo
+                            Black, Franklin D. Roosevelt, Robert H. Jackson
+                        </p>
+                        <p class="modal-categories"><span class="cast">Genres:</span> TV Shows, Tragedy, Crime, Drama
+                        </p>
+                        <p class="modal-categories"><span class="cast">This show is:</span> Provocative, Emotional</p>
+
+                    </div>
+                </div>
+
+                <!-- List of Episodes -->
+                <div style="width: 100%;">
+                    <div
+                        style="width:95%; display:flex; justify-content: space-between; margin: 40px auto 10px auto; color: white;">
+                        <h2>Episodes</h2>
+                        <h2>Limited Series</h2>
+                    </div>
+
+                    <!-- START of Item -->
+                    <hr style="border: 1px solid rgb(62, 62, 62); border-radius: 1px; margin: 20px auto; width: 95%" />
+                    <div
+                        style="display:flex; justify-content: center; align-items: center; margin: 20px auto; padding: 0 50px;">
+                        <h1 style="color: white; margin-right: 20px;">1</h1>
+                        <img src="./src/episode1.png" style="width: 150px; height: 150px; object-fit: cover;"
+                            alt="episode1" />
+                        <div style="margin-left: 50px;">
+                            <div style="display:flex; justify-content: space-between; align-items: center;">
+                                <h3 style="color: white">Part One</h3>
+                                <h3 style="color: white; margin-right: 20px; margin-bottom: 20px;">68m</h3>
+                            </div>
+
+                            <p style="color: white;word-break: break-all;">When a man tries to protest against
+                                impressment
+                                since he believed it to be regarding the issue of him being Japanese, he gets arrested
+                                and seen as an enemy of the state. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Proin metus augue, accumsan sed magna
+                                id, porta egestas elit. Quisque ac facilisis diam. Nulla cursus mattis leo, eu varius
+                                tortor imperdiet non. Praesent eleifend ipsum eget augue aliquam egestas. Vestibulum
+                                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce est
+                                velit, rutrum eget lectus ut, luctus finibus sapien.</p>
+                        </div>
+                    </div>
+                    <!-- END of Item -->
+
+
+
+                    <!-- START of Item -->
+                    <hr style="border: 1px solid rgb(62, 62, 62); border-radius: 1px; margin: 20px auto; width: 95%" />
+                    <div
+                        style="display:flex; justify-content: center; align-items: center; margin: 0 auto; padding: 0 50px;">
+                        <h1 style="color: white; margin-right: 20px;">2</h1>
+                        <img src="./src/episode2.png" style="width: 150px; height: 150px; object-fit: cover;"
+                            alt="episode1" />
+                        <div style="margin-left: 50px;">
+                            <div style="display:flex; justify-content: space-between; align-items: center;">
+                                <h3 style="color: white">Part Two</h3>
+                                <h3 style="color: white; margin-right: 20px; margin-bottom: 20px;">76m</h3>
+                            </div>
+
+                            <p style="color: white;  word-break: break-all;">When a man tries to protest against
+                                impressment
+                                since he believed it to be regarding the issue of him being Japanese, he gets arrested
+                                and seen as an enemy of the state. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Proin metus augue, accumsan sed magna
+                                id, porta egestas elit. Quisque ac facilisis diam. Nulla cursus mattis leo, eu varius
+                                tortor imperdiet non. Praesent eleifend ipsum eget augue aliquam egestas. Vestibulum
+                                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce est
+                                velit, rutrum eget lectus ut, luctus finibus sapien.</p>
+                        </div>
+                    </div>
+                    <!-- END of Item -->
+
+                    <!-- START of Item -->
+                    <hr style="border: 1px solid rgb(62, 62, 62); border-radius: 1px; margin: 20px auto; width: 95%" />
+                    <div
+                        style="display:flex; justify-content: center; align-items: center; margin: 0 auto; padding: 0 50px;">
+                        <h1 style="color: white; margin-right: 20px;">3</h1>
+                        <img src="./src/episode3.png" style="width: 150px; height: 150px; object-fit: cover;"
+                            alt="episode1" />
+                        <div style="margin-left: 50px;">
+                            <div style="display:flex; justify-content: space-between; align-items: center;">
+                                <h3 style="color: white">Part Three</h3>
+                                <h3 style="color: white; margin-right: 20px; margin-bottom: 20px;">72m</h3>
+                            </div>
+
+                            <p style="color: white;  word-break: break-all;">When a man tries to protest against
+                                impressment
+                                since he believed it to be regarding the issue of him being Japanese, he gets arrested
+                                and seen as an enemy of the state. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Proin metus augue, accumsan sed magna
+                                id, porta egestas elit. Quisque ac facilisis diam. Nulla cursus mattis leo, eu varius
+                                tortor imperdiet non. Praesent eleifend ipsum eget augue aliquam egestas. Vestibulum
+                                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce est
+                                velit, rutrum eget lectus ut, luctus finibus sapien.</p>
+                        </div>
+                    </div>
+                    <!-- END of Item -->
+
+                    <!-- START of Item -->
+                    <hr style="border: 1px solid rgb(62, 62, 62); border-radius: 1px; margin: 20px auto; width: 95%" />
+                    <div
+                        style="display:flex; justify-content: center; align-items: center; margin: 0 auto; padding: 0 50px;">
+                        <h1 style="color: white; margin-right: 20px;">4</h1>
+                        <img src="./src/episode4.png" style="width: 150px; height: 150px;object-fit: cover; "
+                            alt="episode1" />
+                        <div style="margin-left: 50px;">
+                            <div style="display:flex; justify-content: space-between; align-items: center;">
+                                <h3 style="color: white">Part Four</h3>
+                                <h3 style="color: white; margin-right: 20px; margin-bottom: 20px;">64m</h3>
+                            </div>
+
+                            <p style="color: white;  word-break: break-all;">When a man tries to protest against
+                                impressment
+                                since he believed it to be regarding the issue of him being Japanese, he gets arrested
+                                and seen as an enemy of the state. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Proin metus augue, accumsan sed magna
+                                id, porta egestas elit. Quisque ac facilisis diam. Nulla cursus mattis leo, eu varius
+                                tortor imperdiet non. Praesent eleifend ipsum eget augue aliquam egestas. Vestibulum
+                                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce est
+                                velit, rutrum eget lectus ut, luctus finibus sapien.</p>
+                        </div>
+                    </div>
+                    <!-- END of Item -->
+                </div>
+            </div>
+            <!--Modal About Tab -->
+            <div style="width: 95%; margin: 30px auto 20px auto; padding-bottom: 40px;">
+                <p style="color: white; font-size: 28px; margin: 40px 0px 20px 0px;"><span
+                        style="font-weight: lighter; color: rgb(206, 206, 206);">About</span>
+                    <span style="font-weight: bold;">The Abyss of Racism</span>
+                </p>
+                <p style="color: white; font-size: 18px; margin: 14px 0;"><span style="color: grey;">Creators:</span>
+                    Fakhriddin Orolov, Max Trainor, Shohruh Kholmatjonov, Brady Joling</p>
+                <p style="color: white; font-size: 18px; margin: 14px 0;"><span style="color: grey;">Director:</span>
+                    Fakhriddin Orolov</p>
+                <p style="color: white; font-size: 18px; margin: 14px 0;"><span style="color: grey;">Cast:</span> Fred
+                    Toyosaburo Korematsu, Wayne M. Collins, Charles A.
+                    Horsky, Charles Fahy, Justice Hugo
+                    Black, Franklin D. Roosevelt, Robert H. Jackson</p>
+                <p style="color: white; font-size: 18px; margin: 14px 0;"><span style="color: grey;">Genres:</span> TV
+                    Shows, Tragedy, Crime, TV Dramas, Social Issue TV Dramas</p>
+                <p style="color: white; font-size: 18px; margin: 14px 0;"><span style="color:grey;">This show is:</span>
+                    Provocative, Emotional</p>
+                <p style="color: white; font-size: 18px; margin: 14px 0;"><span style="color:grey;">Maturity
+                        rating:</span> <span
+                        style="outline-style: solid; outline-width: 2px; outline-color: grey; padding: 4px">PG-13</span>
+                    language,
+                    smoking</p>
+                <p style="color: white; font-size: 18px; margin: 14px 0; padding-left: 122px;">Parents
+                    strongly cautioned. May be
+                    Inappropriate for ages 12 and under.</p>
+            </div>
         </div>
+    </div>
 
     </div>
 
+
+    <!-- Pop Up -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <br />
+                <p>At the tail end of 1942, the Empire of Japan surprised America by attacking their naval base at
+                    Pearl
+                    harbor. America responded by declaring war on the Empire of Japan. Because of the large
+                    population
+                    of Asians, mostly Japanese, on the west coast of America many were afraid that the Japanese
+                    population were going to sabotage the war effort and endanger America. The president did not
+                    want to
+                    take any risks, so America began to incarcerate Japanese citizens and imprison them in
+                    internment
+                    camps. </p>
+                <hr />
+                <p>Fred Korematsu heard about the news and did not budge from his home. He believed as an American
+                    citizen he should be treated fairly and not be imprisoned. He was arrested instead of sent to a
+                    camp. After his arrest for failing to report to a relocation center, Korematsu while in jail
+                    joined
+                    the American Civil Liberties Union. He joined the ACLU to challenge the constitutionality of the
+                    government’s order to relocate all Japanese citizens.</p>
+                <hr />
+                <p>When the trial began, Korematsu was tried in San Francisco in a federal court, for violating
+                    military
+                    orders issued under Executive Order. Korematsu had been convicted for his crimes and was given
+                    five
+                    years of probation and was sent to an Assembly Center in San Bruno. Korematsu had tried to
+                    appeal
+                    the trial but he was unsuccessful. Korematsu continued to ask the Supreme Court to retrial. The
+                    Supreme Court had tried him and had a split 6-3 decision determining Korematsu’s verdict was a
+                    “military necessity” and not about race.
+                    The decision on Korematsu’s conviction was highly controversial as it was the one of few supreme
+                    court cases that sustained a restriction on civil liberties, seeming to approve racism. However, the
+                    conviction was universally rejected, but finally overturned during the 2018 Trump v. Hawaii Supreme
+                    Court case where Chief Justice Roberts declared that Korematsu’s case was unlawfully decided.
+                </p>
+                <br />
+            </div>
+        </div>
+    </div>
 
     <script src="index.js">
 
